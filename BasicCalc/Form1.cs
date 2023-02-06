@@ -159,7 +159,8 @@ namespace BasicCalc
                 Addition_button.BackColor = Color.LightGray;
             } else
             {
-                oldNumber = oldNumber + currentNumber;
+                double result = doMaths();
+                oldNumber = result;
                 label1.Text = oldNumber.ToString();
                 currentNumber = 0;
                 isOverwriteable= true;
@@ -179,8 +180,9 @@ namespace BasicCalc
                 }
                 else
                 {
-                    oldNumber = oldNumber - currentNumber;
-                    label1.Text = oldNumber.ToString();
+                double result = doMaths();
+                oldNumber = result;
+                label1.Text = oldNumber.ToString();
                     currentNumber = 0;
                     isOverwriteable= true;
                 }
@@ -199,8 +201,9 @@ namespace BasicCalc
                 }
                 else
                 {
-                    oldNumber = oldNumber * currentNumber;
-                    label1.Text = oldNumber.ToString();
+                double result = doMaths();
+                oldNumber = result;
+                label1.Text = oldNumber.ToString();
                     currentNumber = 0;
                     isOverwriteable= true;
                 }
@@ -219,8 +222,9 @@ namespace BasicCalc
                 }
                 else
                 {
-                    oldNumber = oldNumber / currentNumber;
-                    label1.Text = oldNumber.ToString();
+                double result = doMaths();
+                oldNumber = result;
+                label1.Text = oldNumber.ToString();
                     currentNumber = 0;
                     isOverwriteable= true;
                 }
