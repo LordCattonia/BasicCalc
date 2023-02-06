@@ -164,6 +164,7 @@ namespace BasicCalc
                 label1.Text = oldNumber.ToString();
                 currentNumber = 0;
                 isOverwriteable= true;
+                currentSign = '+';
             }
             }     
             // Subtraction
@@ -185,6 +186,7 @@ namespace BasicCalc
                 label1.Text = oldNumber.ToString();
                     currentNumber = 0;
                     isOverwriteable= true;
+                currentSign = '-';
                 }
             }
             // Multiplication
@@ -206,6 +208,7 @@ namespace BasicCalc
                 label1.Text = oldNumber.ToString();
                     currentNumber = 0;
                     isOverwriteable= true;
+                currentSign = 'x';
                 }
             }
         // Division
@@ -227,6 +230,7 @@ namespace BasicCalc
                 label1.Text = oldNumber.ToString();
                     currentNumber = 0;
                     isOverwriteable= true;
+                currentSign = '/';
                 }
             }
         // Equals
